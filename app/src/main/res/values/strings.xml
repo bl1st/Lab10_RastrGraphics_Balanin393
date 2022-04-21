@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Lab10_RastrGraphics_Balanin393</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_invertColors">Invert colors</string>
+    <string name="btn_invertGreyTones">Grey Tones</string>
+    <string name="btn_setBlackWhite">Black and White</string>
+
+    <string name="btn_Contrast">Contrast</string>
+    <string name="btn_verticalFlip">Vertical flip</string>
+    <string name="btn_horizontalFlip">Horizontal flip</string>
+    <string name="btn_offset">Pixel offset</string>
+</resources>
