@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
-
+//Balanin 393 Lab 10 Graphics
     Bitmap bmp1;
     Bitmap bmp2;
     int width, height;
@@ -35,9 +35,6 @@ public class MainActivity extends AppCompatActivity {
     ImageView v2;
     String name = ""; //picture name
     boolean result = false;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         et.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
         builder.setView(et);
         //All pictures in assets folder!!!!
-        builder.setMessage("Write in picture name without extension (only cat picture exists):");
+        builder.setMessage("Write in picture name without extension (pics in assets folder):");
         builder.setPositiveButton("ОК", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 name = et.getText().toString();
@@ -103,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 int c =bmp1.getPixel(i,j);
                 bmp2.setPixel(i,j,c);
             }
-        }
+        }//balanin 393 lab 10
     }
 
     public void filter_invert(View v) {
@@ -154,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
         alert = builder.create();
         alert.show();
     }
-
+//balanin 393 lab 10
         public void BlackWhiteChange(int p) {
 
             filter_greyTones(new View(this));
@@ -191,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
             alert = builder.create();
             alert.show();
 
-        }
+        }//balanin 393 lab 10
 
         public void filter_BrightnessChange(int p) {
             for (int i =0; i < width; i++) {
@@ -226,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
             alert = builder.create();
             alert.show();
 
-        }
+        }//balanin 393 lab 10
         public void filter_ContrastChange(int lvl){
             double blue = 0;
             double green = 0;
